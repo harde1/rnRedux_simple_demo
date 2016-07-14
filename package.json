@@ -1,0 +1,20 @@
+{
+  "name": "rnRedux_simple_demo",
+  "version": "0.0.1",
+  "private": true,
+  "scripts": {
+    "start": "node node_modules/react-native/local-cli/cli.js start",
+    "bundle-android": "node node_modules/react-native/local-cli/cli.js bundle --entry-file index.android.js --platform android --dev false --bundle-output android/app/src/main/assets/index.android.bundle --assets-dest android/app/src/main/res/ && node node_modules/react-native/local-cli/cli.js run-android",
+    "bundle-ios": "node node_modules/react-native/local-cli/cli.js bundle --entry-file index.ios.js --platform ios --dev false --bundle-output ios/main.jsbundle --assets-dest ios/ && node node_modules/react-native/local-cli/cli.js run-ios",
+    "runios": "node node_modules/react-native/local-cli/cli.js run-ios && node node_modules/react-native/local-cli/cli.js log-ios",
+    "runandroid": "node node_modules/react-native/local-cli/cli.js run-android && /Applications/sdk/platform-tools/adb logcat *:S ReactNative:V ReactNativeJS:V"
+  },
+  "dependencies": {
+    "react": "^15.2.1",
+    "react-native": "0.29.0",
+    "react-native-router-redux": "^0.2.2",
+    "react-redux": "^4.4.5",
+    "redux": "^3.5.2",
+    "redux-thunk": "^2.1.0"
+  }
+}
