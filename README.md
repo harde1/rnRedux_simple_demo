@@ -7,13 +7,13 @@ redux for react native
 无添加
 适合新手
 
+增加react-native-router-redux,关于跳转部分的控制说明
+
 #使用
 
-npm install
-
-react-native run-ios
+npm run-script runios
 
 or
 
-react-native run-android
+npm run-script  runandroid
 
